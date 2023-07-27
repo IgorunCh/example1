@@ -1,0 +1,101 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lunasima&display=swap");
+
+#hat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: silver;
+  width: 100%;
+  height: 100px;
+}
+
+#hat > .account {
+  font-size: 40px;
+  padding-right: 70px;
+}
+
+#hat > .signature {
+  font-family: "Lunasima", sans-serif;
+  font-size: 40px;
+  padding-left: 70px;
+}
+
+#cell {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+#side-part {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 20%;
+  order: 1;
+}
+#side-part > .external-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.6;
+  background: red;
+  height: 100%;
+  width: 100%;
+}
+#side-part > .external-unit > .indoor-unit {
+  flex-direction: column;
+  background: grey;
+  height: 70%;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.table-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.table {
+  height: 100%;
+  width: 90%;
+  border-collapse: collapse;
+  border: 5px solid red;
+}
+tr {
+  border: 5px solid red;
+}
+td {
+  border: 5px solid red;
+}
+td:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid red;
+  border-top: 5px solid red;
+  height: 100%;
+}
+th {
+  border: 5px solid red;
+}
+th:nth-child(2) {
+  border: 10px solid red;
+  border-bottom: 5px solid red;
+}
+
+.table-block {
+  background: silver;
+  height: 50%;
+  width: 60%;
+}

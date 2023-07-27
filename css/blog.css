@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  line-height: 30px;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  color: grey;
+}
+
+#border {
+  display: flex;
+  flex-direction: row;
+  border: 2em solid #e1e6ed;
+  flex-basis: 100%;
+}
+#border > #side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 15%;
+  background-color: #f0f4f7;
+  padding-top: 20px;
+}
+
+#side > .cell-description {
+  width: 70%;
+  padding: 15%;
+}
+
+#side > .cell-description > .description {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+#side > .menu {
+  display: flex;
+  width: 70%;
+  padding: 15%;
+  line-height: 60px;
+  font-size: 15px;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.menu > ul {
+  list-style: none;
+}
+
+#border > .right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 85%;
+  padding-left: 15%;
+}
+
+.right > #header {
+  padding-top: 35px;
+  padding-right: 35%;
+  flex-direction: row;
+  height: 120px;
+  width: 60%;
+}
+
+#header > h2 {
+  line-height: 60px;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.right > #main {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.right > #main > #feed {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: 100%;
+}
+
+#feed > .post {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+.post > .post-header {
+  font-size: 20px;
+}
+
+.post > .post-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  width: 50%;
+  padding-top: 10px;
+}
+
+.post > .post-photo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.post > .post-button {
+  padding-top: 20px;
+  flex-basis: 40px;
+  width: 150px;
+  border-color: #0db3e3;
+  padding-bottom: 20px;
+}
+
+.strip {
+  width: 100%;
+  opacity: 0.3;
+  margin-bottom: 20px;
+}
+
+#main > #info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  width: 25%;
+}
+
+#info > .search-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-basis: 50px;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding-left: 10px;
+}
+
+input {
+  border: 0;
+}
+
+.search {
+  font-size: 14px;
+  outline: none;
+}
+
+.submit {
+  padding-right: 10px;
+  height: 14px;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+#info > .heading {
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-top: 50px;
+  flex-basis: 50px;
+  font-family: "Edu SA Beginner", cursive;
+}
+
+#info > .my-photo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.social-network {
+  display: flex;
+  flex-basis: 45px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Edu SA Beginner", cursive;
+}
+
+.social-network > .address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 45px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.address:hover {
+  cursor: pointer;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: grey;
+  transition: color 0.25s;
+}
+
+.link:hover {
+  color: #0db3e3;
+  transition: color 0.25s;
+}
+
+.text-widget {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.archives {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.archives > .date {
+  padding-top: 20px;
+}
+.tags {
+  display: flex;
+  flex-direction: column;
+}
+
+.tags > .row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-basis: 30px;
+}
+
+.tags > .row > .info-button {
+  display: flex;
+  margin-right: 10px;
+  background-color: #e1e6ed;
+  flex-basis: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-button > .button-link {
+  flex-basis: 100%;
+  height: 100%;
+  border: 1px solid #e1e6ed;
+  background-color: #e1e6ed;
+  transition: color, background-color 0.5s;
+}
+
+.button-link:hover {
+  border: 1px solid #0db3e3;
+  background-color: #0db3e3;
+  color: #fff;
+  transition: color, background-color, border 0.5s;
+}
+
+.button {
+  border: 1px solid #0db3e3;
+  background-color: #fff;
+  color: #0db3e3;
+  height: 90%;
+  width: 80%;
+  transition: color, background-color 0.25s;
+}
+
+.button:hover {
+  background-color: #0db3e3;
+  color: #fff;
+  transition: color, background-color 0.25s;
+}

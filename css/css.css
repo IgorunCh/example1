@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+
+#button-back {
+  color: black;
+  width: 100px;
+  height: 100px;
+}
+#button-back :hover {
+  color: black;
+  border: 10px;
+  border-color: black;
+  border-radius: 5px;
+}
+.link {
+  color: black;
+}
+.link :hover {
+  color: red;
+}
+#hat {
+  font-family: "Tektur", cursive;
+}
+h1 {
+  color: red;
+  font-size: 72pt;
+}
+.a1 {
+  color: blue;
+}
+#a2 {
+  font-size: 36pt;
+}
